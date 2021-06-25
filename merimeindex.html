@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Merime Events Run</title>
+		<meta name="description" content="Manage items or anything you hire out. Do events planning by creating event projects & break them into tasks which can be assigned to your team with deadlines. Register for 30 days free trial..">
+        <meta name="keywords" content="Events Management, Project Management, Leasing System, IT companies in Kilifi, Kilifi County, Merime, Vehicles in Kilifi, Hire In Kilifi, IT companies in Kenya">
+        <meta name="author" content="Merime Solutions">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="hir/images/fire.png" type="image/x-icon">
+		<link href="assets/aos/aos.css" rel="stylesheet">
+		
+	
+		<link rel="shortcut icon" href="images/fire.png" type="image/x-icon">
+        <!-- bootstrap 3.0.2 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+		<link href="themes/css/bootstrappage.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+		<!-- global styles -->
+		<link href="themes/css/flexslider.css" rel="stylesheet"/>
+		<link href="themes/css/main.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<style>
+		    #wrapper::-webkit-scrollbar {
+  				display: none;
+			}
+		</style>
+	</head>
+    <body class=" text-dark bg-light">
+		<!-- style="background : url('img/bg.png'); width: 100%!important;"-->
+	 <nav class="navbar navbar-expand-lg bg-danger navbar-light py-2 fixed-top border-bottom shadow p-3 mb-5 rounded" style="height:65px; background-color:  #00008b;">
+        <div class="container text-white ">
+			<div class="logo">
+				<img src="img/logo.png" alt="image"  style="width: 30px;" class="image-fluid " />
+			</div>
+			
+			<div class="p-3 text-dark">
+				<h4> Merime Events-run </h4>
+			</div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            	<span class="navbar-toggler-icon"></span>    
+            </button>
+            <div class="collapse navbar-collapse " id="navmenu">
+                <ul class="navbar-nav ms-auto fw-bold ">
+                    <li class="nav-item">
+                        <a href="hir/login.php" class="nav-link text-dark">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hir/register.php" class="nav-link text-dark">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="demo.php" class="nav-link text-dark">Book Demo</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link text-dark" href="free-trial.php">Free Trial</a>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+    </nav>
+	<hr class="danger">
+	<section class="d-block bg-light"></section>
+		
+			<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+				<div class="carousel-inner" >
+					<div class="carousel-item active">
+						<img src="img/unsplash.png" class="d-inline-block w-100 h-30 img-fluid" style="height: 80vh;" alt="" />
+						<div class="carousel-caption d-none d-md-block d-sm-block text-left text-light ">
+							<h1 class="text-left ">Events Management</h1>
+							<p class="text-left lead fw-bold"><span>Projects management</span></p>
+							<p class="text-left lead fw-bold"><span>Tasks management</span></p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/construction.jpg" class="d-inline-block w-100 h-30 img-fluid" style="height: 80vh;"alt="" />
+						<div class="carousel-caption d-none d-md-block d-sm-block text-left text-light">
+							<h1 class="text-left ">Manage services you're hiring out</h1>
+							<p class="text-left lead fw-bold"><span>Construction</span></p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/machinery.jpg" class="d-inline-block w-100 h-30 img-fluid"style="height: 80vh;" alt="" />
+						<div class="carousel-caption d-none d-md-block d-sm-block text-left text-light ">
+							<h1 class="text-left ">Manage items you're hiring out</h1>
+							<p class="text-left lead fw-bold"><span>Machinery</span></p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/tents.png" class="d-inline-block w-100 h-30 img-fluid" style="height: 80vh;"alt="" />
+						<div class="carousel-caption d-none d-md-block d-sm-block text-left text-light ">
+							<h1 class="text-left ">Manage items you're hiring out</h1>
+							<p class="text-left lead fw-bold"><span>Tents</span></p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/vehicle.png" class="d-inline-block w-100 h-30 img-fluid" alt="" />
+						<div class="carousel-caption d-none d-md-block d-sm-block text-left text-light ">
+							<h1 class="text-left bg-danger">Manage items you're hiring out</h1>
+							<p class="text-left bg-danger fw-bold"><span>Vehicles</span></p>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		
+	</section>
+
+	<section class="d-flex align-items-center pt-5 pb-5 shadow p-2  rounded" 
+	 data-aos="zoom-in-up"  data-aos-easing="linear" data-aos-duration="3000" style="background : url('img/money1.jpg'); width: 100%!important;">
+		<div  class="container bg-light " style="background : url('img/money1.jpg'); width: 100%!important;" >
+			<span class="text-danger text-center fw-bold" data-aos="zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+				<h2>Why Merime Events-run?</h2></span>
+			<p class=" text-center lead " style="font-size:25px;">
+				Whether you are looking to smoothen the path of events planning and make hiring of items easier for your business,
+				Merime events run is your ultimate system. 
+			</p>  
+			<div class="call-btn text-center">
+				<a href="" class="btn btn-danger h2 text-center"><i class="bi bi-telephone h2"></i></a>
+			</div>
+			<h4 class="text-center call animate__animated animate__backInUp" >Call us Today!</h4>
+			
+		</div>
+		
+	</section>
+	
+	<section class="main-content shadow pt-3 pb-3  rounded" style="background : url('img/plan3.jpg');background-repeat: no-repeat; " >
+		<div class="container">
+			<div class="row d-block">
+				
+				<div class="d-sm-none d-md-none col-lg-6">
+					<img src="" alt="" class="d-inline-block w-100 h-30 img-fluid" style="max-width:100%;max-height: 100%;">
+				</div>
+			
+				<div class="col-lg-6 col-sm-12 col-md-12">
+					<div class="row" data-aos="zoom-in-left"  data-aos-easing="linear" data-aos-duration="3000">
+						<h3 class="fw-bold text-danger">MERIME EVENTS-RUN IS THE SYSTEM YOU NEED</h3>
+						<div class="col-6">
+							<p class=" fw-bold" style="font-size:25px;">
+							Manage hired out items anywhere, anytime from the reach of your phone.
+						The projects module in the system helps you out with your events planning.
+						</p>
+						</div>		
+						<div>
+						<p class=" h3 animate__animated animate__bounce text-danger" >HOW?</p>
+						</div>
+						<p class=" fw-bold" style="font-size:25px;">
+						Create an event as a project, break it down to tasks and assign them to your team with deadlines.
+						</p>
+						<div>
+						<p class="h3  lead animate__animated animate__backInUp fw-bold text-danger" >THERE'S MORE</p>
+						</div>
+						<p class=" fw-bold" style="font-size:25px;">
+						The System also manages Inventories, Invoices, Payments, Hiring/Leasing and Returning items <br>and generates reports that are printable both in excel and pdf.
+						Merime Events-run makes every plaanning a lot easier.</p>
+					</div>
+					<div class="row" data-aos="zoom-in-right"  data-aos-easing="linear" data-aos-duration="3000">
+						<p class="lead fw-bold" style="font-size:25px;">Let Merime Events-run help you organize and track your wedding, birthday party and any other event for you.</p>
+							<a class="h3" style="text-decoration: none;" href="demo.php">Do you want a demo?</a><br>
+							<p class="lead fw-bold" style="font-size:25px;"> Link up with our team. And you have a whole 30 days free trial period.</p>
+							<div>
+								<a class="btn btn-danger" href="free-trial.php">Sign Up for a free trial today</a>
+							</div>	
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>										
+	</section>
+	<section class="main-content p-3  shadow p-3  bg-light rounded" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" style="background : url('img/money1.jpg'); width: 100%!important;" >
+					
+					<h2 class="text-center fw-bold mb-5 mt-5 text-danger"  >BEST DEALS FOR YOU!</h2>
+						<div class="container">
+							<div class="row d-flex justify-between g-4">
+								<div class="col-md product-boxx ">
+									<div class="service">
+										<div class="card bg-light ">
+											<div class="card-body text-center">
+												<h4 class="card-title mb-3 fw-bold"style="color:#cd7f32;">BRONZE PACKAGE</h4>
+												<h5 class="card-title mb-2 ">KSH 2500 per Month</h5>
+												<div class="card-text ">
+													<p class="fw-bold"> <i class="bi bi-check"></i>Project (Event) management</p> 
+													<p class="fw-bold"><i class="bi bi-check"></i> Customer registration </p> 
+													<p class="fw-bold"><i class="bi bi-check"></i> Invoices </p>  
+													<p class="fw-bold"> <i class="bi bi-check"></i>Reports </p>
+													<p class="fw-bold"><i class="bi bi-check"></i> 1 user account </p>
+													<a href="free-trial.php" class="btn btn-danger" style="border-radius: 20px" >Try It for Free</a></a><br><br>
+													<h4 style=" height:12px" class=" text-center text-danger" data-aos="zoom-in-up"
+													data-aos-easing="ease-out-cubic"
+													data-aos-duration="2000">30 DAYS FREE!!</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md product-boxx ">	
+									<div class="service">
+										<div class="card bg-light">
+											<div class="card-body text-center">
+												<h4 class="card-title mb-3  fw-bold" style="color:#C0C0C0;">SILVER PACKAGE</h4>
+												<h5 class="card-title mb-2 ">KSH 3000 per Month</h5>
+												<div class="card-text ">
+													<p class="fw-bold"> <i class="bi bi-check"></i>Everything in Bronze <strong> Plus</strong> </p> 
+													<p class="fw-bold"><i class="bi bi-check"></i> Leasing items</p> 
+													<p class="fw-bold"><i class="bi bi-check"></i> Returning items</p>  
+													<p class="fw-bold"> <i class="bi bi-check"></i>Inventory management</p>
+													<p class="fw-bold"><i class="bi bi-check"></i> 3 user accounts </p>
+													<a href="free-trial.php" class="btn btn-danger" style="border-radius: 20px" >Try It for Free</a></a><br><br>
+													<h4 style=" height:10px" class=" text-center text-danger" data-aos="zoom-in-up"
+													data-aos-easing="ease-out-cubic"
+													data-aos-duration="3000">30 DAYS FREE!!</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md product-boxx">	
+									<div class="service">
+										<div class="card bg-light rounded">
+											<div class="card-body text-center h-100">
+												<h4 class="card-title mb-3  fw-bold" style="color:#FFD700;">GOLD PACKAGE</h4>
+												<h5 class="card-title mb-2 ">KSH 5,000 per Month</h5>
+												<div class="card-text ">
+													<p class="fw-bold"> <i class="bi bi-check"></i>Everything in Silver <strong> Plus</strong> </p> 
+													<p class="fw-bold"><i class="bi bi-check"></i> Penalities</p> 
+													<p class="fw-bold"><i class="bi bi-check mb-5"></i>Unlimited users </p>  
+													
+													<a href="free-trial.php" class="btn btn-danger mt-5" style="border-radius: 20px" >Try It for Free</a></a><br><br>
+													<h4 style=" height:10px" class=" text-center text-danger" data-aos="zoom-in-up"
+													data-aos-easing="ease-out-cubic"
+													data-aos-duration="3000">30 DAYS FREE!!</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+			
+			<!--
+			<section id="copyright">
+				<center><h5>Contact us</h5>
+                <p>2nd Floor Kilifi Plaza,</p>
+                <p>P.O. Box 726 - 80108,</p>
+                <p>Kilifi Town, Kilifi County, Kenya.</p>
+                <p>Phone: +254 757 414 345</p>
+                <p><a style="text-decoration:none; color:#fff;" href="mailto:help@merimevents-run.com?subject=" target="_blank">Email: help@merimevents-run.com</a></p>
+				
+				</center>
+			</section>
+		-->
+			<section class="d-flex align-items-center justify-between p-5 mt-1 text-white" style="background : url('img/contact2.jpg'); width: 100%!important;">
+				<div class="container">
+					<div class="row g-5 text-left ml-5 py-2">
+						<!-- style="background : url('img/background.png'); width: 100%!important;-->
+						<div class="col-md-12 col-sm-12 col-lg-4  border-end-dark" >
+								
+							<h3 class="text-left p-2 text-danger ">Contact Us</h3>
+							<p class="h5">2nd Floor Kilifi Plaza,</p>
+							<p class="h5">P.O. Box 726 - 80108,</p>
+							<p class="h5">Kilifi Town, Kilifi County, Kenya.</p>
+							<i class="bi bi-telephone  h5 "> +254 757 414 345</i></p>
+							<div class="my-2">
+							<a style="text-decoration:none; color:success;" href="help@merimevents-run.com?subject=" class="h4 mt-3 text-white"target="_blank"><i class="bi bi-envelope h4"></i> help@merimevents-run.com</a></p>
+							</div>
+						</div>
+						
+						<div class="col-md-6 col-sm-6 col-lg-4 text-left">
+							<h3 class="text-left p-2 text-danger">Useful Links</h3>
+							<ul class="navbar-nav ms-auto fw-bold text-white ">
+								<li class="nav-item">
+									<a href="hir/login.php" class="nav-link h5 text-white">Login</a>
+								</li>
+								<li class="nav-item text-white">
+									<a href="hir/register.php" class="nav-link h5 text-white">Register</a>
+								</li>
+								<li class="nav-item">
+									<a href="demo.php" class="nav-link h5 text-white">Book Demo</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link h5 text-white" href="free-trial.php">Free Trial</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6 col-sm-6 col-lg-4 ">
+							<img src="img/merime.png" style="height: 25vh; width: 40p;"alt="" class="mt-2 mb-1  px-5 mx-2">
+							<h4>Your ultimate planner system!</h4>
+						</div>
+
+
+					</div>
+					<hr>
+					<div class="row d-flex align-items-center justify-center ">
+						<div class="col-lg-6 col-md-12 col-sm-12 text-center">
+							<h3 class="text-white">Connect with us on our Social Media platforms! </h3>
+						</div>
+						<div class="col-lg-6 col-md-12 col-sm-12 text-center mb-3 ">
+							<a href="https://www.facebook.com/MerimeSolutions"><i class="bi bi-facebook  p-2 h2  "></i></a>
+							<a href="#"><i class="bi bi-twitter text-info mx-2p-2 h2 "></i></a>
+							<a href="#"><i class="bi bi-linkedin text-info mx-2  p-2 h2  "></i></a>
+							<a href="#"><i class="bi bi-instagram text-danger mx-2  p-2 h2 "></i></a>
+							
+						</div>
+			
+					</div>
+				
+				</div>
+				
+					
+			
+			</section>
+		
+		<!-- scripts -->
+		<script src="themes/js/jquery-1.7.2.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>	
+		<script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>	
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="themes/js/superfish.js"></script>	
+		<script src="themes/js/jquery.scrolltotop.js"></script>	
+		<script>
+			AOS.init();
+		  </script>
+		<script src="themes/js/common.js"></script>
+		<script src="themes/js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(document).ready(function() {
+					$('.flexslider').flexslider({
+						animation: "fade",
+						slideshowSpeed: 5000,
+						animationSpeed: 600,
+						controlNav: false,
+						directionNav: true,
+						controlsContainer: ".flex-container" // the container that holds the flexslider
+					});
+				});
+			});
+		</script>
+	<script src="assets/aos/aos.js"></script>		
+		</div>
+    </body>
+</html>

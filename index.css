@@ -1,0 +1,89 @@
+.homepage-slider::before{
+    display: block;
+    content: '';
+    height: 40px;
+}
+
+body{
+    position:relative;
+}
+
+.product-boxx{
+    height:100%;
+}
+
+/*Animation code*/
+@keyframes tada{
+    from {
+          width: 0;
+    }
+    to {
+          width: 100%;
+    }
+      
+}
+@media (min-width:576){
+    #map{
+        display:none;
+    }
+}
+
+.logo:hover{
+    transform:scale(2,2);
+}
+
+#section{
+    display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: tada; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+@media(min-width: 576){
+    .signup{
+        display: none;
+    }
+}
+
+.zoom{  -moz-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); transition:0.7s ease all; -webkit-transition:0.7s ease all; -moz-transition:0.7s ease all;}
+
+.zoom:hover{ -moz-transform: scale(1.5); -webkit-transform: scale(1.5); transform: scale(1.5);}
+
+.main-content{
+
+  
+    /* background-position:  right bottom, left top; */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100px 80px auto; */
+}
+
+.card{
+    height:auto;
+    opacity:.8;
+}
+.card:hover{
+    opacity:2;
+    transform:scale(1.1,1.1);
+    transition:1.0s ease all;
+    background:  #00008b;
+    box-shadow: 0 8px 6px -6px black;
+    cursor: pointer;
+}
+
+.nav-item{
+    font-size: 20px;
+}
+
+.nav-item:hover{
+    transform:scale(1.1,1.1);
+    text-decoration-color: yellow;
+}
+
+.call{
+    display:none;
+}
+
+.call-btn:hover +.call{
+    display:block;
+}
