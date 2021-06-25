@@ -1,2 +1,2 @@
 # Merime-Events-run
-A Landing page for the Merime Events-run system
+A responsive Landing page for the Merime Events-run system created with **Bootstrap 5** , HTML5 and basic CSS.
