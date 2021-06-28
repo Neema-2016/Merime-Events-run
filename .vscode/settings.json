@@ -1,3 +1,11 @@
 {
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5502,
+    "html.autoClosingTags": false,
+    "html.format.wrapAttributes": "auto",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "editor.wordWrapColumn": 100,
+    "html.format.wrapLineLength": 0,
+    "html.format.preserveNewLines": false
 }
