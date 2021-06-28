@@ -1,3 +1,9 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
 #topbar {
     position: sticky;
     background: rgb(184, 28, 28) !important;
@@ -39,6 +45,19 @@
 #topbar .social-links a:hover {
     color: #fff;
 }
+.logo {
+    width: 2.5rem; /* 40px */
+    height: auto;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+.logo-text {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    margin-left: 4px;
+}
 
 .homepage-slider::before {
     display: block;
@@ -46,20 +65,8 @@
     height: 40px;
 }
 
-body {
-    position: relative;
-    margin: 0;
-}
-
 .product-boxx {
     height: 100%;
-}
-
-@media screen and (min-width: 768px) {
-    .logo:hover {
-        /* only scale up on large devices(laptop and above) */
-        transform: scale(2);
-    }
 }
 
 #section {
@@ -72,6 +79,10 @@ body {
 
 #carouselExampleFade img {
     border-radius: 4px;
+}
+.btn {
+    font-weight: 500;
+    font-size: 1rem;
 }
 .card {
     height: auto;
