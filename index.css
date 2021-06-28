@@ -1,3 +1,46 @@
+#topbar{
+    position: sticky;
+	background: rgb(184, 28, 28)!important;
+	font-size: 15px;
+	height: 40px;
+	padding: 0;
+	color: rgba(24, 22, 22, 0.6);
+	/*transform: translate(0, -200px);*/
+}
+
+#topbar .contact-info a {
+	line-height: 0;
+	color: rgba(255, 255, 255, 0.6);
+	transition: 0.3s;
+}
+
+#topbar .contact-info a:hover {
+	color: #fff;
+}
+
+#topbar .contact-info i {
+	color: #cc1616;
+	line-height: 0;
+	margin-right: 5px;
+}
+
+#topbar .contact-info .phone-icon {
+	margin-left: 15px;
+}
+
+#topbar .social-links a {
+	color: rgba(255, 255, 255, 0.6);
+	padding: 4px 12px;
+	display: inline-block;
+	line-height: 1px;
+	transition: 0.3s;
+}
+
+#topbar .social-links a:hover {
+	color: #fff;
+
+}
+
 .homepage-slider::before{
     display: block;
     content: '';
@@ -12,21 +55,6 @@ body{
     height:100%;
 }
 
-/*Animation code*/
-@keyframes tada{
-    from {
-          width: 0;
-    }
-    to {
-          width: 100%;
-    }
-      
-}
-@media (min-width:576){
-    #map{
-        display:none;
-    }
-}
 
 .logo:hover{
     transform:scale(2,2);
@@ -40,23 +68,6 @@ body{
   animation-duration: 2s; /* don't forget to set a duration! */
 }
 
-@media(min-width: 576){
-    .signup{
-        display: none;
-    }
-}
-
-.zoom{  -moz-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); transition:0.7s ease all; -webkit-transition:0.7s ease all; -moz-transition:0.7s ease all;}
-
-.zoom:hover{ -moz-transform: scale(1.5); -webkit-transform: scale(1.5); transform: scale(1.5);}
-
-.main-content{
-
-  
-    /* background-position:  right bottom, left top; */
-    /* background-repeat: no-repeat; */
-    /* background-size: 100px 80px auto; */
-}
 
 .card{
     height:auto;
@@ -71,14 +82,20 @@ body{
     cursor: pointer;
 }
 
+.card:hover .card-title{
+    color:#cc1616;
+}
 .nav-item{
     font-size: 20px;
 }
 
-.nav-item:hover{
-    transform:scale(1.1,1.1);
-    text-decoration-color: yellow;
+.nav-item:hover {
+    transform:scale(1.2,1.2);
+    transition:0.9s;
+    text-decoration-line: underline;
+    text-decoration-color: #cc1616;
 }
+
 
 .call{
     display:none;
@@ -86,4 +103,31 @@ body{
 
 .call-btn:hover +.call{
     display:block;
+}
+
+/*
+.navbar{
+    background: transparent;
+    
+            left: 0;
+            background-image: linear-gradient(#0e053d, #000);
+            width: 100%;
+            
+            padding: 1.5rem;
+            border-radius: 0 0 1rem 1rem;
+            transition: .5s;
+}
+
+*/
+
+/*media queries*/
+
+@media screen and (max-width:576px){
+    .phone{
+        display: none;
+    }
+
+    .help{
+        display: none;
+    }
 }
