@@ -131,6 +131,13 @@ body{
         display: none;
     }
 	
+	
+}
+.carousel-caption{
+	display:block
+}
+
+@media screen and (max-width:576px){
 	.carousel-caption{
 		display: block;
 	}
