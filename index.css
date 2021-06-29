@@ -130,4 +130,7 @@ body{
     .help{
         display: none;
     }
+	
+	.carousel-caption{
+		display: block;
 }
