@@ -2,6 +2,7 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 #topbar {
@@ -45,13 +46,14 @@ body {
 #topbar .social-links a:hover {
     color: #fff;
 }
-.logo {
+.logo img {
     width: 2.5rem; /* 40px */
     height: auto;
     box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
 }
 .logo-text {
+    display: inline-block;
     font-size: 1rem;
     padding: 0;
     margin: 0;
@@ -80,6 +82,10 @@ body {
 #carouselExampleFade img {
     border-radius: 4px;
 }
+#carouselExampleFade .carousel-item:not(:nth-child(3)) {
+    backdrop-filter: blur(10px);
+}
+
 .btn {
     font-weight: 500;
     font-size: 1rem;
