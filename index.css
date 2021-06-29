@@ -89,8 +89,9 @@ body {
 #carouselExampleFade img {
     border-radius: 4px;
 }
-#carouselExampleFade .carousel-item:not(:nth-child(3)) {
-    backdrop-filter: blur(10px);
+#carouselExampleFade .carousel-caption {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .btn {
